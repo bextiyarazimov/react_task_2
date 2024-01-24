@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './app.css';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,7 +14,7 @@ function App() {
               className="btn btn-success mx-3"
               onClick={() => setCount(count + 1)}
             >
-              Increment
+             +
             </button>
             <button
               className="btn btn-secondary mx-3"
@@ -26,7 +27,7 @@ function App() {
               onClick={() => setCount(count - 1)}
               disabled={count === 0}
             >
-              Decrement
+            -
             </button>
           </div>
         </div>
